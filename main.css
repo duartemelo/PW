@@ -1,0 +1,154 @@
+/* VARIAVEIS */
+
+:root{
+    --sidebar-width: 250px;
+}
+
+
+/* **** */
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* side-bar relative! */
+
+.side-bar{
+    position: fixed;
+    height: 100%;
+    background-color: #f1f1f1;
+    width: var(--sidebar-width);
+}
+
+.logo-container{
+    /* background-color: red; */
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+.side-bar .logo{
+    width: 110px;
+    margin-left: 40px;
+}
+
+.buttons-container{
+    /* background-color: blue; */
+    width: 100%;
+    height: calc(100% - 400px);
+    align-items: center;
+}
+
+.buttons-list{
+    list-style: none;
+    font-weight: 600;   
+    padding: 0;
+    /* background-color: gray;  */
+}
+
+.buttons-list li{
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 60px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+.buttons-list .selected{
+    background-color: #d9d9d9;
+    width: fit-content;
+    color: #5C2976;
+}
+
+.tips-container{
+    /* background-color: gray; */
+    width: 100%;
+    height: 200px;
+}
+
+.tip-container{
+    background-color: #5C2976;
+    min-height: 150px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    overflow: auto;
+}
+
+.tip-container h2{
+    display: block;
+    position: relative;
+    margin: 0;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.tip-container p{
+    margin: 0;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content{
+    background-color: gray; 
+    margin-left: var(--sidebar-width);
+    height: 100vh;
+}
+
+.top-content{
+    /* background-color: black; */
+    width: 100%;
+    height: 200px;
+}
+
+.bottom-content{
+    /* background-color: gray; */
+    width: 100%;
+    height: calc(100% - 200px); /* remover */
+}
+
+.tip-buttons-container{
+    list-style: none;
+    width: calc(100% - 40px);
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0;
+}
+
+.tip-buttons-container li{
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    opacity: 30%;
+    border-radius: 3px;
+    transition: 0.5s all;
+}
+
+.tip-buttons-container .selected{
+    opacity: 100%;
+}
