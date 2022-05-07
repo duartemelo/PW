@@ -196,7 +196,7 @@ a{
 .bottom-content{
     /* background-color: gray; */
     width: 100%;
-    /* height: calc(100vh - 200px); */
+    /* height: calc(100vh - 200px); tirar */
 }
 
 .tip-buttons-container{
@@ -222,3 +222,4 @@ a{
 .tip-buttons-container .selected{
     opacity: 100%;
 }
+
